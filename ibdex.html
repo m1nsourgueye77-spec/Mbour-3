@@ -1,0 +1,838 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Amicale Promo 83-86 - École Normale de Mbour</title>
+  <link rel="stylesheet" href="style.css">
+
+  <style>
+
+/* Configuration générale */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f5f2eb; /* Fond Beige */
+  color: #333;
+  line-height: 1.6;
+  padding-top: 70px; /* Espace pour la navbar fixe */
+}
+
+/* Marges de 50px de chaque côté */
+.site-container {
+  margin: 0 50px;
+  background-color: #ffffff;
+  padding: 30px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+}
+
+/* 1. Barre de navigation verte */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #1e7e34; /* Vert */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 50px;
+  z-index: 1000;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  color: white;
+  font-weight: bold;
+  width: 10px; height: 10px;
+}
+
+.logo-img {
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  padding: 5px 10px;
+  transition: background 0.3s;
+}
+
+.nav-links a:hover {
+  background-color: #145a23;
+  border-radius: 4px;
+}
+
+/* Sections du site */
+.page-section {
+  padding: 40px 0;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+h1, h2, h3 {
+  color: #1e7e34;
+  margin-bottom: 15px;
+}
+
+/* Page 1: Hero & Photos d'accueil */
+.hero-images {
+  display: flex;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.hero-images .img-box {
+  text-align: center;
+  flex: 1;
+}
+
+.hero-images img, .photo-promo img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+/* Page 3: Photo de groupe */
+.photo-promo {
+  text-align: center;
+}
+
+/* Page 5: Annuaire */
+.cards-grid {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.card {
+  background: #fafafa;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 15px;
+  flex: 1;
+  min-width: 200px;
+  text-align: center;
+}
+
+.card img {
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+/* Page 6 & 7: Grille Médias / Projets */
+.media-grid {
+  display: flex;
+  gap: 20px;
+}
+
+.media-item {
+  flex: 1;
+  background: #fafafa;
+  padding: 15px;
+  border-radius: 8px;
+}
+
+.media-item img {
+  width: 100%;
+  border-radius: 6px;
+  margin-bottom: 10px;
+}
+
+.video-placeholder {
+  background-color: #333;
+  color: white;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 6px;
+  margin-bottom: 10px;
+}
+
+/* Page 8: Contact & Footer */
+footer {
+  padding: 40px 0 10px 0;
+  background-color: #f0ebe1;
+  margin: 0 -30px -30px -30px;
+  padding: 30px;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 500px;
+  margin: 20px 0;
+}
+
+.contact-form input, .contact-form textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.contact-form button {
+  background-color: #1e7e34;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.contact-form button:hover {
+  background-color: #145a23;
+}
+
+.copyright {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 0.9em;
+  color: #666;
+}/* Configuration générale */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f5f2eb; /* Fond Beige */
+  color: #333;
+  line-height: 1.6;
+  padding-top: 70px; /* Espace pour la navbar fixe */
+}
+
+/* Marges de 50px de chaque côté */
+.site-container {
+  margin: 0 50px;
+  background-color: #ffffff;
+  padding: 30px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+}
+
+/* 1. Barre de navigation verte */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #1e7e34; /* Vert */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 50px;
+  z-index: 1000;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  color: white;
+  font-weight: bold;
+  width: 10px; height: 10px;
+}
+
+.logo-img {
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  padding: 5px 10px;
+  transition: background 0.3s;
+}
+
+.nav-links a:hover {
+  background-color: #145a23;
+  border-radius: 4px;
+}
+
+/* Sections du site */
+.page-section {
+  padding: 40px 0;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+h1, h2, h3 {
+  color: #1e7e34;
+  margin-bottom: 15px;
+}
+
+/* Page 1: Hero & Photos d'accueil */
+.hero-images {
+  display: flex;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.hero-images .img-box {
+  text-align: center;
+  flex: 1;
+}
+
+.hero-images img, .photo-promo img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+/* Page 3: Photo de groupe */
+.photo-promo {
+  text-align: center;
+}
+
+/* Page 5: Annuaire */
+.cards-grid {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.card {
+  background: #fafafa;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 15px;
+  flex: 1;
+  min-width: 200px;
+  text-align: center;
+}
+
+.card img {
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+/* Page 6 & 7: Grille Médias / Projets */
+.media-grid {
+  display: flex;
+  gap: 20px;
+}
+
+.media-item {
+  flex: 1;
+  background: #fafafa;
+  padding: 15px;
+  border-radius: 8px;
+}
+
+.media-item img {
+  width: 100%;
+  border-radius: 6px;
+  margin-bottom: 10px;
+}
+
+.video-placeholder {
+  background-color: #333;
+  color: white;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 6px;
+  margin-bottom: 10px;
+}
+
+/* Page 8: Contact & Footer */
+footer {
+  padding: 40px 0 10px 0;
+  background-color: #f0ebe1;
+  margin: 0 -30px -30px -30px;
+  padding: 30px;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 500px;
+  margin: 20px 0;
+}
+
+.contact-form input, .contact-form textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.contact-form button {
+  background-color: #1e7e34;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.contact-form button:hover {
+  background-color: #145a23;
+}
+
+.copyright {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 0.9em;
+  color: #666;
+}
+
+  </style>
+
+</head>
+<body>
+
+  <!-- BARRE DE NAVIGATION (Verte) -->
+  <nav class="navbar">
+    
+
+
+  
+      <span>Promo 83-86 Mbour</span>
+    </div>
+    <ul class="nav-links">
+      <li><a href="#accueil">Accueil</a></li>
+      <li><a href="#intro">Présentation</a></li>
+      <li><a href="#groupe">Photo de Groupe</a></li>
+      <li><a href="#historique">Historique</a></li>
+      <li><a href="#annuaire">Annuaire</a></li>
+      <li><a href="#videos">Vidéos</a></li>
+      <li><a href="#projets">Projets</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <div class="site-container">
+
+    <!-- PAGE 1 : ACCUEIL -->
+    <section id="accueil" class="page-section">
+      <h1 class="titre1" style="font-size:x-large;padding-top: 0;margin-top: 0;"> BIENVENUE SUR LE SITE DE L'AMICALE DES NORMALIENS DE LA 11ème PROMO DE MBOUR</h1>
+      <h3>Promotion 1983 - 1986 | École Normale de Formation</h3>
+      <div class="hero-images">
+        <div class="img-box">
+          
+           <img src=" LOGO.jpeg " alt="Logo Amicale" class="logo-img" style="width: 300px; height: 200px;">
+          <p>Logo de l'Amicale <br> </p> 
+          <h3 class="intro">INTRODUCTION</h3>
+          <p style="text-align: justify;"> Dans une époque où tout s’accélère, certains liens traversent 
+            les décennies sans jamais s’effriter. C’est le cas de 
+            ces éducateurs maintenant à la retraite, sortis d’une même école
+             de formation et qui ont créé l’Amicale de la onzième promotion 
+            de <span style="color: red;"> l’Ecole Normale Régionale Demba Diop de Mbour. </span> <br>
+            A travers ces pages, votre serviteur vous raconte comment la rigueur des études et l’amitié sincère ont forgé une fraternité indéfectible. Ensemble, ils évoquent ce soutien mutuel qui ne s’est jamais démenti. 
+	Au-delà des anecdotes et des retrouvailles chaleureuses, le récit 
+    témoigne d’une époque charnière de l’école primaire où dès 
+    la sortie on était affecté en pleine brousse sénégalaise où on se 
+    servait tantôt de charrettes, tantôt de pirogues pour rejoindre son
+     village d’affectation. A l’époque où l’électrification rurale n’était pas
+      encore très répandue, les seuls moyens d’éclairage de la nuit étaient la bougie et 
+      la lampe tempête <br> Ce récit révèle aussi la puissance d’un engagement humain 
+      partagé, transformant de jeunes normaliens en piliers de la République tout
+       au long de leur carrière : d’où la présence parmi eux de
+        Directeurs d’écoles chevronnés et des fonctionnaires de l'administration centrale talentueux et
+         compétents, d’éminents émigrés de la diaspora et un représentant de l'ONU qui font la fierté de l’Amicale.
+	 <br>
+ 
+            .</p>
+
+
+        </div>
+        <div class="img-box">
+          <img src=" administration.jpeg " alt="École Normale de Mbour" style="width: 600px; height: 750px;">
+          <p> Cet édifice abritatit les locaux de l'administration de l'école</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- PAGE 2 : INTRODUCTION -->
+    <section id="intro" class="page-section">
+      <h2>1. Présentation & Bienvenue</h2>
+      <p>Bienvenue sur le site officiel de l'Amicale des anciens élèves instituteurs de la promotion 1983-1986 de l'École Normale de Mbour, Sénégal. Ce site est un espace de retrouvailles, de fraternité et de mémoire collective dédié à tous les membres de notre promotion.</p>
+    </section>
+
+    <!-- PAGE 3 : PHOTO DE GROUPE -->
+    <section id="groupe" class="page-section">
+      <h2>2. Photo de Groupe de la Promotion</h2>
+      <div class="photo-promo">
+        <img src=" Dans la cour en famille.jpeg " alt="Photo de groupe de la promotion">
+        <p><em>Souvenir de la Promotion 1983-1986 dans la cour de l'École Normale de Mbour.</em></p>
+      </div>
+    </section>
+
+    <!-- PAGE 4 : HISTORIQUE -->
+      <main>
+        <h2 class="section-title"> 3. L'Histoire de notre Promotion</h2>
+        <p style=" text-align: justify;">L'AVENTURE DE LA PROMO 83-86 <br>
+
+L'histoire de cette amicale commence en 1983, lorsque des jeunes enthousiastes
+ franchissent les portes de l'École Normale pour suivre une formation
+  d'instituteurs. Pendant quatre ans, la promotion va se forger 
+  une identité commune et tisser des liens indéfectibles. Histoire que l'on pourrait résumer de la façon suivante:
+  <br>
+ I.	<pan style="color: red;">LE PARCOURS DE FORMATION</pan><br>
+1)	<pan style="color: blue;">Alternance Théorie-Pratique : </pan>  L'apprentissage navigue constamment entre les cours théoriques
+ dispensés à l'école et les immersions périodiques dans les classes 
+ d'application, permettant d'apprivoiser le métier sur le terrain. <br>
+2)	<pan style="color: blue;">Les Deux Mémoires : </pan>  Un travail intellectuel intense 
+marqué par la rédaction et la soutenance de deux épreuves clées : <br>
+	L'Étude du milieu : Analyse approfondie de l'environnement économique, 
+socio-culturel et géographique du Sénégal ou d'une ses régions. <br>
+	Le Mémoire psychopédagogique : Réflexion ciblée sur la psychologie
+ de l'enfant,sur les méthodes et les démarches d'enseignement-apprentissage. <br>
+3)	<span style="color: blue;">La Sortie (1986) : </span> L'aboutissement des quatre années 
+débouche sur la soutenance des mémoires, préalable à la mise en 
+stage pratique sur le terrain avant le grand saut dans la carrière
+ enseignante. <br>
+
+II.	<span style="color: red; ">DE LA PROMOTION A L'AMICALE </span> <br>
+
+Au-delà de la rigueur académique, les épreuves partagées, les séances de
+ préparation de classe et la solidarité face à une administration parfois hostile ont créé une fraternité solide.
+  Une fois diplômés en 1986, la volonté de ne pas se perdre de vue a 
+  donné naissance à l'amicale, un espace privilégié pour entretenir 
+  la mémoire de ces quatre années formatrices, célébrer les parcours de
+   chacun et perpétuer l'esprit d'entraide. <br>
+   III. <span style="color: red;"> EN MÉMOIRE DE NOS DISPARUS</span>  <br>   
+
+1) <span style="color: blue;">Pendant la formation : </span>  Le souvenir de nos camarades arrachés 
+à notre affection en cours de cursus demeure gravé dans nos cœurs et nos esprits.
+ Leur départ brutal a laissé un vide digne de ce nom au sein de la promotion,
+  mais il a aussi renforcé notre sentiment de vulnérabilité devant la volonté divine et scellé encore
+   plus fort notre fraternité. <br>
+
+2) <span style="color: blue;"> Après la formation et au fil des ans : </span> 
+  Une fois le chemin de la vie professionnelle engagé, la mort a malheureusement 
+  continué d'égrener nos rangs. Enseignants dévoués, ces compagnons de route ont accompli leur mission avant de s'éteindre.
+
+ <br>3) <span style="color: blue;">Le devoir de mémoire : </span> L'Amicale s'assigne
+  ainsi un devoir sacré : honorer la mémoire de tous nos camarades rappelés à Dieu.
+   À travers nos prières, nos réunions et nos pensées, leur présence spirituelle 
+   continue de faire vivre l'esprit de la 11ème Promotion. <br>
+   4)  <span style="color: blue;"> Le soutien aux familles et ayants droit :</span>  Au-delà du souvenir, l'Amicale concrétise sa solidarité en maintenant
+    un lien étroit avec les familles de nos regrettés camarades. Elle apporte 
+    notamment une assistance attentive et un accompagnement précieux aux veuves dans
+     les démarches administratives et le règlement des successions.
+
+
+
+ .</p>
+    </main>
+
+    <!-- PAGE 5 : ANNUAIRE DES MEMBRES -->
+    <section id="annuaire" class="page-section">
+      <h2>4. Annuaire des Membres</h2>
+      <div class="cards-grid">
+        <div class="card">
+          <img src="CTK L'écrivain.jpeg " style="width: 250px; height: 300px;"  alt="Photo membre">
+          <h3> CHEIKH T. KEBE</h3> Une plume inspirée qui perpétue l'héritage littéraire du père et immortalise notre mémoire collective. 
+          <p><strong> 1ère Affectation :</strong> Sinthiou Amadou Maïram Dpt de Podor</p>
+        
+        </div>
+        <div class="card">
+          <img src="BIG GO le S.G. du moyen secondaire.jpeg  "  style="width: 250px; height: 300px;"   alt="Photo membre">
+          <h3>DEMBA NDIAYE</h3>  Un Surveillant Général d'exception dont le dévouement a marqué à jamais le lycée de Ndande. »
+          
+          <p><strong> 1ère Affectation :</strong> Kouba Département de Bignona </p>
+        </div>
+        <div class="card">
+          <img src=" AW notre Intendant.jpeg"   style="width: 250px; height: 300px;"    alt="Photo membre">
+          <h3>YOUSSOU AW</h3>
+          Un gestionnaire rigoureux et chevronné, maître de l'intendance au service du MEN.
+           .
+          <p><strong> 1ère Affectation :</strong> Paal Département de Saint-Louis</p>
+         
+        </div>
+      </div>
+ 
+    </section>
+ <section id="annuaire" class="page-section">
+    
+      <div class="cards-grid">
+        <div class="card">
+          <img src="Adama Dème.jpeg "  style="width: 250px; height: 300px;"   alt="Photo membre">
+          <h3>ADAMA DEME</h3>Un chef d'établissement chevronné qui a piloté l'instruction 
+          de générations d'élèves avec bienveillance. 
+          <p><strong> 1ère Affectation :</strong> </p>
+        </div>
+        <div class="card">
+          <img src=" Abdou Sèye.jpeg"   style="width: 250px; height: 300px;"  alt="Photo membre">
+          <h3>ABDOU SEYE</h3>Un gestionnaire rigoureux, maître des chiffres et garant de la bonne gouvernance des ressources publiques
+         <p><strong> 1ère Affectation :</strong> </p>
+        </div>
+        <div class="card">
+          <img src="BALDE.jpeg "  style="width: 250px; height: 300px;"   alt="Photo membre">
+          <h3>ABDOULAYE BALDE</h3>Un diplomate dévoué portant l'excellence de notre formation sur la scène internationale au service de la paix.
+          <p><strong> 1ère Affectation :</strong> </p>
+        </div>
+      </div>
+</section>
+
+<section id="annuaire" class="page-section">
+    
+      <div class="cards-grid">
+        <div class="card">
+          <img src=" BOB.jpeg "   style="width: 250px; height: 300px;"  alt="Photo membre">
+          <h3>BABACAR BOB</h3>Un serviteur de l'école publique au parcours exemplaire et au dévouement sans faille. »
+          <p><strong>1ère Affectation :</strong> Bacobof Département de Fatick</p>
+          
+        </div>
+        <div class="card">
+          <img src="DIOP.jpeg "   style="width: 250px; height: 300px;"  alt="Photo membre">
+          <h3>ABDOULAYE DIOP</h3>Un enseignant chevronné dont l'engagement et la générosité inspirent ses pairs
+           <p><strong> 1ère Affectation :</strong>Djiragone </p>
+        </div>
+        <div class="card">
+          <img src=" Dondé notre conseiller en pêche maritime.jpeg"   style="width: 250px; height: 300px;"  alt="Photo membre">
+          <h3>IBRAHIMA DONDE</h3>Un pilier de l'éducation qui a porté haut les valeurs de la promotion dès sa première affectation à Ngaparou.
+          <p><strong> 1ère Affectation :</strong> Ngaparou département de Mbour.</p>
+        </div>
+      </div>
+</section>
+<section id="annuaire" class="page-section">
+    
+      <div class="cards-grid">
+        <div class="card">
+          <img src="FALL ALIOU.jpeg "   style="width: 250px; height: 300px;"  alt="Photo membre">
+          <h3>ALIOU FALL</h3>
+           <p><strong> 1ère Affectation :</strong> </p>
+        </div>
+        <div class="card">
+          <img src=" Jean Lamane Diouf.jpeg"  style="width: 250px; height: 300px;"   alt="Photo membre">
+          <h3>JEAN LAMANE DIOUF</h3>
+          <p><strong> 1ère Affectation :</strong> </p>
+        </div>
+        <div class="card">
+          <img src="MACODOU.jpeg "   style="width: 250px; height: 300px;"  alt="Photo membre">
+          <h3>MACODOU NDIAYE</h3>
+           <p><strong> 1ère Affectation :</strong> </p>
+        </div>
+      </div>
+</section>
+
+<section id="annuaire" class="page-section">
+    
+      <div class="cards-grid">
+        <div class="card">
+          <img src=" Maître Ndiaye.jpeg "  style="width: 250px; height: 300px;"  alt="Photo membre">
+          <h3>ASSANE NDIAYE</h3>Un acteur clé de l'appareil judiciaire, veillant avec méthode à l'authenticité des actes et à la fluidité des procédures.
+          <p><strong> 1ère Affectation :</strong> Guinguinéo Dpt de Kaolack</p>
+        </div>
+        <div class="card">
+          <img src="MEDOUNE.jpeg  "  style="width: 250px; height: 300px;"  alt="Photo membre">
+          <h3>PAPA MEDOUNE DIA</h3> Un manager émérite qui orchestre la vie scolaire avec rigueur, bienveillance et sens du devoir.
+           <p><strong> 1ère Affectation :</strong> Kounghahy DPT BAKEL</p>
+        </div>
+        <div class="card">
+          <img src=" Mouhamadou A. Ndiaye.jpeg " style="width: 250px; height: 300px;"   alt="Photo membre">
+          <h3>MOUHAMADOU A. NDIAYE</h3>Un pilier de la diaspora, gardien indéfectible du lien de solidarité avec la terre natale.
+          <p><strong> 1ère Affectation :</strong> Brikamanding2 DPT de Bignona</p>
+        </div>
+      </div>
+</section>
+
+<section id="annuaire" class="page-section">
+    
+      <div class="cards-grid">
+        <div class="card">
+          <img src=" NIANG le Grand Baye FALL.jpeg "  style="width: 250px; height: 300px;"  alt="Photo membre">
+          <h3>IBRAHIMA NIANG</h3>Un ambassadeur de la promotion à l'étranger, qui fait rayonner les valeurs de notre amicale au-delà des frontières.
+           <p><strong> 1ère Affectation :</strong> MBOUR Dpt Mbour</p>
+        </div>
+        <div class="card">
+          <img src="SANE.jpeg "   style="width: 250px; height: 300px;"  alt="Photo membre">
+          <h3>MOUSSA SANE</h3>Un bâtisseur d'écoles d'expérience, garant de la discipline et de l'excellence académique
+           <p><strong> 1ère Affectation :</strong> MAKA DPT SEDHIOU </p>
+        </div>
+        <div class="card">
+          <img src=" Samba Sèye.jpeg "  style="width: 250px; height: 300px;"  alt="Photo membre">
+          <h3> SAMBA BEYE</h3>Un bâtisseur d'avenir dont la rigueur managériale et le dévouement ont transformé durablement son établissement.
+           <p><strong> 1ère Affectation :</strong>Simankounda DPT SEDHIOU </p>
+        </div>
+      </div>
+</section>
+
+<section id="annuaire" class="page-section">
+    
+      <div class="cards-grid">
+        <div class="card">
+          <img src=" BAR.jpeg " style="width: 250px;height: 300px;" alt="Photo membre">
+          <h3>DJIBY BAR</h3>
+          <p><strong>Affectation :</strong> Djiragone</p>
+          <p><strong>Email :</strong> a.diop@exemple.sn</p>
+          <p><strong>Tél :</strong> +221 77 000 00 00</p>
+        </div>
+        <div class="card">
+          <img src=" MATAR.jpeg " style="width: 250px;height: 300px;" alt="Photo membre">
+          <h3>MATAR DIOUF</h3>
+          <p><strong>Affectation :</strong> Dakar</p>
+          <p><strong>Email :</strong> a.ndiaye@exemple.sn</p>
+          <p><strong>Tél :</strong> +221 77 111 11 11</p>
+        </div>
+        <div class="card">
+          <img src="SEGA.jpeg " style="width: 250px;height: 300px;" alt="Photo membre">
+          <h3> SEGA MBAGNE FABOR NDIAYE</h3>
+          <p><strong>Affectation :</strong> Saint-Louis</p>
+          <p><strong>Email :</strong> m.sow@exemple.sn</p>
+          <p><strong>Tél :</strong> +221 77 222 22 22</p>
+        </div>
+      </div>
+</section>
+<section id="annuaire" class="page-section">
+    
+      <div class="cards-grid">
+        <div class="card">
+          <img src="TRA KF.jpeg "style="width: 250px;height: 300px;"   alt="Photo membre">
+          <h3>IBRAHIMA TRAORE</h3>
+          <p><strong>Affectation :</strong> Djiragone</p>
+          <p><strong>Email :</strong> a.diop@exemple.sn</p>
+          <p><strong>Tél :</strong> +221 77 000 00 00</p>
+        </div>
+        <div class="card">
+          <img src="TRA MBOUR.jpeg "  style="width: 250px;height: 300px;" alt="Photo membre">
+          <h3>IBRAHIMA TRAORE</h3>
+          <p><strong>Affectation :</strong> Dakar</p>
+          <p><strong>Email :</strong> a.ndiaye@exemple.sn</p>
+          <p><strong>Tél :</strong> +221 77 111 11 11</p>
+        </div>
+        <div class="card">
+          <img src=" " alt="Photo membre">
+          <h3>Mamadou Sow</h3>
+          <p><strong>Affectation :</strong> Saint-Louis</p>
+          <p><strong>Email :</strong> m.sow@exemple.sn</p>
+          <p><strong>Tél :</strong> +221 77 222 22 22</p>
+        </div>
+      </div>
+</section>
+
+<section id="annuaire" class="page-section">
+    
+      <div class="cards-grid">
+        <div class="card">
+          <img src="https://via.placeholder.com/120" alt="Photo membre">
+          <h3>Abdoulaye Diop</h3>
+          <p><strong>Affectation :</strong> Djiragone</p>
+          <p><strong>Email :</strong> a.diop@exemple.sn</p>
+          <p><strong>Tél :</strong> +221 77 000 00 00</p>
+        </div>
+        <div class="card">
+          <img src="https://via.placeholder.com/120" alt="Photo membre">
+          <h3>Awa Ndiaye</h3>
+          <p><strong>Affectation :</strong> Dakar</p>
+          <p><strong>Email :</strong> a.ndiaye@exemple.sn</p>
+          <p><strong>Tél :</strong> +221 77 111 11 11</p>
+        </div>
+        <div class="card">
+          <img src="https://via.placeholder.com/120" alt="Photo membre">
+          <h3>Mamadou Sow</h3>
+          <p><strong>Affectation :</strong> Saint-Louis</p>
+          <p><strong>Email :</strong> m.sow@exemple.sn</p>
+          <p><strong>Tél :</strong> +221 77 222 22 22</p>
+        </div>
+      </div>
+</section>
+
+<section id="annuaire" class="page-section">
+    
+      <div class="cards-grid">
+        <div class="card">
+          <img src="https://via.placeholder.com/120" alt="Photo membre">
+          <h3>Abdoulaye Diop</h3>
+          <p><strong>Affectation :</strong> Djiragone</p>
+          <p><strong>Email :</strong> a.diop@exemple.sn</p>
+          <p><strong>Tél :</strong> +221 77 000 00 00</p>
+        </div>
+        <div class="card">
+          <img src="https://via.placeholder.com/120" alt="Photo membre">
+          <h3>Awa Ndiaye</h3>
+          <p><strong>Affectation :</strong> Dakar</p>
+          <p><strong>Email :</strong> a.ndiaye@exemple.sn</p>
+          <p><strong>Tél :</strong> +221 77 111 11 11</p>
+        </div>
+        <div class="card">
+          <img src="https://via.placeholder.com/120" alt="Photo membre">
+          <h3>Mamadou Sow</h3>
+          <p><strong>Affectation :</strong> Saint-Louis</p>
+          <p><strong>Email :</strong> m.sow@exemple.sn</p>
+          <p><strong>Tél :</strong> +221 77 222 22 22</p>
+        </div>
+      </div>
+</section>
+
+
+
+    <!-- PAGE 6 : VIDÉOS -->
+    <section id="videos" class="page-section">
+      <h2>5. Vidéos et Souvenirs</h2>
+      <div class="media-grid">
+        <div class="media-item">
+          <div class="video-placeholder">▶ Vidéo Remise des Diplômes (1986)</div>
+          <p><strong>Cérémonie de Sortie :</strong> Extrait vidéo de la remise des diplômes en 1986 à Mbour.</p>
+        </div>
+        <div class="media-item">
+          <div class="video-placeholder">▶ Vidéo Retrouvailles 2023</div>
+          <p><strong>Grande Réunion :</strong> Discours et moments d'échange lors des retrouvailles de la promo.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- PAGE 7 : PROJETS ET RÉALISATIONS -->
+    <section id="projets" class="page-section">
+      <h2>6. Projets & Réalisations</h2>
+      <div class="media-grid">
+        <div class="media-item">
+          <img src="https://via.placeholder.com/350x200?text=Don+de+mat%C3%A9riel" alt="Don de matériel">
+          <h3>Parrainage d'Écoles Rurales</h3>
+          <p>Distribution de fournitures scolaires et don de livres aux classes du primaire dans la région de Mbour.</p>
+        </div>
+        <div class="media-item">
+          <img src="https://via.placeholder.com/350x200?text=Soutien+Solidarit%C3%A9" alt="Fonds de solidarité">
+          <h3>Fonds de Solidarité Promo</h3>
+          <p>Mise en place d'une caisse d'entraide pour soutenir les membres à la retraite et leurs proches.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- PAGE 8 : PIED DE PAGE & CONTACT -->
+    <footer id="contact">
+      <h2>7. Contacts de l'Amicale</h2>
+      <p>Vous êtes ancien de la promotion 83-86 ou souhaitez nous contacter ?</p>
+      <div class="contact-info">
+        <p><strong>Adresse :</strong> Mbour / Dakar, Sénégal</p>
+        <p><strong>Téléphone :</strong> +221 33 800 00 00</p>
+        <p><strong>Email :</strong> contact@amicale-mbour8386.sn</p>
+      </div>
+      <form class="contact-form">
+        <input type="text" placeholder="Votre nom" required>
+        <input type="email" placeholder="Votre email" required>
+        <textarea placeholder="Votre message" rows="4" required></textarea>
+        <button type="submit">Envoyer</button>
+      </form>
+      <hr>
+      <p class="copyright">&copy; 2026 Amicale Promo 83-86 Mbour - Tous droits réservés.</p>
+    </footer>
+
+  </div>
+
+</body>
+</html>
